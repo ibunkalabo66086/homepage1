@@ -17,18 +17,40 @@
             color: #333;
         }
 
+        /* ヘッダー */
         header {
             background: #0b4d91;
             color: #fff;
-            padding: 50px 20px;
+            padding: 20px 20px 50px 20px;
             text-align: center;
         }
         header h1 {
             font-size: 36px;
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
         header p {
-            font-size: 20px;
+            font-size: 18px;
+            margin: 0 0 20px 0;
+        }
+
+        /* ナビゲーションバー */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 8px 12px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: #fff;
+            color: #0b4d91;
         }
 
         section {
@@ -112,12 +134,14 @@
             border: none;
         }
 
+        /* レスポンシブ対応 */
         @media (max-width: 600px) {
             header h1 { font-size: 28px; }
             header p { font-size: 16px; }
             h2 { font-size: 22px; padding-left: 8px; }
             .member-profile { flex-direction: column; align-items: center; }
             .member-photo { width: 180px; height: 180px; }
+            nav { gap: 12px; }
         }
     </style>
 </head>
@@ -127,9 +151,18 @@
 <header>
     <h1>異文化Labo</h1>
     <p>Learning from differences</p>
+
+    <!-- ナビゲーション -->
+    <nav>
+        <a href="#理念">理念</a>
+        <a href="#事業紹介">事業紹介</a>
+        <a href="#体験研修紹介">体験・研修紹介</a>
+        <a href="#メンバー紹介">メンバー紹介</a>
+        <a href="#お問い合わせ">お問い合わせ</a>
+    </nav>
 </header>
 
-<section>
+<section id="理念">
     <h2>理念</h2>
     <p>
         異文化Laboは、「違い」から学び、お互いを理解し合う共生社会を目指しています。<br>
@@ -138,7 +171,7 @@
     </p>
 </section>
 
-<section>
+<section id="事業紹介">
     <h2>事業紹介</h2>
 
     <div class="service-box">
@@ -152,12 +185,12 @@
     </div>
 </section>
 
-<section>
+<section id="体験研修紹介">
     <h2>体験・研修紹介</h2>
     <p>実際の企業研修や参加者の声を今後掲載予定です。</p>
 </section>
 
-<section class="member-section">
+<section id="メンバー紹介" class="member-section">
     <h2>メンバー紹介</h2>
 
     <div class="member-profile">
@@ -194,25 +227,4 @@
                 異文化Laboは、「違い」から学び、お互いを理解し合う共生社会を目指しています。<br>
                 外国人社員への日本語・ビジネス習慣サポート、<br>
                 日本人社員への異文化理解教育を通して、<br>
-                共に働き、共に生きるための支援をしてまいります。
-            </p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>お問い合わせ</h2>
-    <p>以下のフォームよりお問い合わせをお送りください。</p>
-
-    <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLScwVv2t27qibOEL_fFVXSTdFoVd_eV183Bp3mruyH2gMjcQaw/viewform?embedded=true">
-        読み込んでいます…
-    </iframe>
-</section>
-
-<footer>
-    © 2025 異文化Labo
-</footer>
-
-</body>
-</html>
+                共に働き、共に生きるための支援をしてま
