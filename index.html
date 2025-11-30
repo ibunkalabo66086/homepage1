@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -49,6 +47,48 @@
             padding: 20px;
             margin-top: 40px;
         }
+
+        /* ▼▼▼ メンバー紹介（追加CSS） ▼▼▼ */
+        .member-section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .member-profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+            align-items: flex-start;
+        }
+
+        .member-photo {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            background: #ddd;
+        }
+
+        .member-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .member-name {
+            font-size: 26px;
+            color: #0b4d91;
+            margin-bottom: 5px;
+        }
+
+        .member-title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        /* ▲▲▲ メンバー紹介（追加CSSここまで） ▲▲▲ */
+
     </style>
 </head>
 <body>
@@ -86,10 +126,52 @@
     <p>実際の企業研修や参加者の声を今後掲載予定です。</p>
 </section>
 
-<section>
+<!-- ▼▼▼ ここからメンバー紹介 ▼▼▼ -->
+<section class="member-section">
     <h2>メンバー紹介</h2>
-    <p>準備中</p>
+
+    <div class="member-profile">
+
+        <!-- 写真（後で差し替え可能） -->
+        <img src="your-photo.jpg" alt="プロフィール写真" class="member-photo">
+
+        <div class="member-text">
+            <h3 class="member-name">井上 礼子（INOUE, Reiko）</h3>
+            <p class="member-title">異文化Labo 代表</p>
+
+            <h4>略歴</h4>
+            <p>
+                航空会社で客室乗務員として30,000時間以上乗務し、チーフキャビンアテンダントとして
+                現場での後進の指導・育成、安全教育に長く従事。  
+                国際線において、幅広い文化背景をもつ乗客・クルーと関わりながら多様性への理解を深め、
+                異文化理解と日本語教育の分野に強い関心を持つようになる。
+            </p>
+
+            <h4>専門分野</h4>
+            <ul>
+                <li>日本語教育（ビジネス日本語・職場コミュニケーション）</li>
+                <li>異文化理解研修</li>
+                <li>やさしい日本語指導（日本人社員向け）</li>
+                <li>安全教育・チームマネジメント</li>
+            </ul>
+
+            <h4>資格</h4>
+            <ul>
+                <li>キャリアコンサルタント</li>
+                <li>登録日本語教師</li>
+            </ul>
+
+            <h4>メッセージ</h4>
+            <p>
+                異文化Laboは、「違い」から学び、互いを理解し合う共生社会を目指しています。  
+                外国人社員への日本語・ビジネス習慣サポート、  
+                日本人社員への異文化理解教育を通して、  
+                共に働き、共に生きるための橋渡しをしてまいります。
+            </p>
+        </div>
+    </div>
 </section>
+<!-- ▲▲▲ メンバー紹介ここまで ▲▲▲ -->
 
 <section>
     <h2>お問い合わせ</h2>
