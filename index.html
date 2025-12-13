@@ -33,7 +33,7 @@
             margin: 0 0 20px 0;
         }
 
-        /* ナビゲーションバー */
+        /* ナビゲーション */
         nav {
             display: flex;
             justify-content: center;
@@ -66,189 +66,46 @@
             padding-left: 12px;
         }
 
-        .service-box {
+        /* ===== 理念セクション ===== */
+        .philosophy-section {
             background: #f4f8fb;
-            padding: 25px 20px;
-            margin-top: 20px;
-            border-radius: 10px;
+            padding: 40px 20px;
+            border-radius: 12px;
         }
 
-        footer {
-            background: #eee;
-            text-align: center;
-            padding: 25px 20px;
-            margin-top: 50px;
-        }
-
-        /* メンバー紹介 */
-        .member-section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .member-profile {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 20px;
-            align-items: flex-start;
-        }
-
-        .member-photo {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 8px;
-            background: #fff;
-            border: 1px solid #ccc;
-        }
-
-        .member-text {
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .member-name {
-            font-size: 28px;
+        .philosophy-catch {
+            font-size: 22px;
+            font-weight: 700;
             color: #0b4d91;
-            margin-bottom: 5px;
-        }
-
-        .member-title {
-            font-size: 16px;
-            color: #555;
+            text-align: center;
             margin-bottom: 20px;
         }
 
-        .member-text ul li {
-            list-style-type: disc;
-            margin-left: 20px;
-            color: #0b4d91;
+        .philosophy-jp {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: center;
         }
 
-        /* お問い合わせフォーム */
-        iframe {
-            width: 100%;
-            min-height: 80vh;
-            border: none;
-        }
-
-        /* レスポンシブ対応 */
-        @media (max-width: 600px) {
-            header h1 { font-size: 28px; }
-            header p { font-size: 16px; }
-            h2 { font-size: 22px; padding-left: 8px; }
-            .member-profile { flex-direction: column; align-items: center; }
-            .member-photo { width: 180px; height: 180px; }
-            nav { gap: 12px; }
-        }
-    </style>
-    /* ===== 理念セクション ===== */
-.philosophy-catch {
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b4d91;
-    margin-bottom: 15px;
-}
-
-.philosophy-jp {
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.philosophy-en {
-    margin-top: 25px;
-    font-size: 14px;
-    line-height: 1.7;
-    font-style: italic;
-    color: #555;
-}
-</head>
-
-<body>
-
-<header>
-    <h1>異文化Labo</h1>
-    <p>Learning from differences</p>
-　　 <p>違いを力に　ともに働く社会へ</p>
-
-    <!-- ナビゲーション -->
-    <nav>
-        <a href="#理念">理念</a>
-        <a href="#事業紹介">事業紹介</a>
-        <a href="#体験研修紹介">体験・研修紹介</a>
-        <a href="#メンバー紹介">メンバー紹介</a>
-        <a href="#contact">お問い合わせ</a>
-    </nav>
-</header>
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>異文化Labo - Learning from differences</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            margin: 0;
-            padding: 0;
+        .philosophy-en {
+            margin-top: 25px;
+            font-size: 14px;
             line-height: 1.7;
-            color: #333;
-        }
-
-        /* ヘッダー */
-        header {
-            background: #0b4d91;
-            color: #fff;
-            padding: 20px 20px 50px 20px;
+            font-style: italic;
+            color: #555;
             text-align: center;
         }
-        header h1 {
-            font-size: 36px;
-            margin: 10px 0;
-        }
-        header p {
-            font-size: 18px;
-            margin: 0 0 20px 0;
-        }
 
-        /* ナビゲーションバー */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 700;
-            padding: 8px 12px;
-            transition: background 0.3s, color 0.3s;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background: #fff;
-            color: #0b4d91;
-        }
+        /* スマホでは英語理念を非表示 */
+        @media (max-width: 600px) {
+            header h1 { font-size: 28px; }
+            header p { font-size: 16px; }
+            h2 { font-size: 22px; padding-left: 8px; }
+            nav { gap: 12px; }
 
-        section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #0b4d91;
-            font-size: 26px;
-            border-left: 5px solid #0b4d91;
-            padding-left: 12px;
+            .philosophy-en {
+                display: none;
+            }
         }
 
         .service-box {
@@ -266,12 +123,6 @@
         }
 
         /* メンバー紹介 */
-        .member-section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
         .member-profile {
             display: flex;
             flex-wrap: wrap;
@@ -285,7 +136,6 @@
             height: 220px;
             object-fit: cover;
             border-radius: 8px;
-            background: #fff;
             border: 1px solid #ccc;
         }
 
@@ -306,49 +156,12 @@
             margin-bottom: 20px;
         }
 
-        .member-text ul li {
-            list-style-type: disc;
-            margin-left: 20px;
-            color: #0b4d91;
-        }
-
-        /* お問い合わせフォーム */
         iframe {
             width: 100%;
             min-height: 80vh;
             border: none;
         }
-
-        /* レスポンシブ対応 */
-        @media (max-width: 600px) {
-            header h1 { font-size: 28px; }
-            header p { font-size: 16px; }
-            h2 { font-size: 22px; padding-left: 8px; }
-            .member-profile { flex-direction: column; align-items: center; }
-            .member-photo { width: 180px; height: 180px; }
-            nav { gap: 12px; }
-        }
     </style>
-    /* ===== 理念セクション ===== */
-.philosophy-catch {
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b4d91;
-    margin-bottom: 15px;
-}
-
-.philosophy-jp {
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.philosophy-en {
-    margin-top: 25px;
-    font-size: 14px;
-    line-height: 1.7;
-    font-style: italic;
-    color: #555;
-}
 </head>
 
 <body>
@@ -356,9 +169,8 @@
 <header>
     <h1>異文化Labo</h1>
     <p>Learning from differences</p>
-　　 <p>違いを力に　ともに働く社会へ</p>
+    <p>違いを力に　ともに働く社会へ</p>
 
-    <!-- ナビゲーション -->
     <nav>
         <a href="#理念">理念</a>
         <a href="#事業紹介">事業紹介</a>
@@ -368,28 +180,26 @@
     </nav>
 </header>
 
-<section id="理念">
+<section id="理念" class="philosophy-section">
     <h2>理念</h2>
 
-    <p style="font-size: 22px; font-weight: 700; color: #0b4d91; margin-bottom: 15px;">
+    <p class="philosophy-catch">
         違いに気づき、対話でつなぎ、現場で活かす。
     </p>
 
-    <p>
+    <p class="philosophy-jp">
         異文化Laboは、文化や価値観の違いを理解し合うための対話と学びを通して、<br>
         一人ひとりを「人財」として大切にし、<br>
         多様性が人と組織の力として活きる多文化共生社会を目指します。
     </p>
 
-    <p style="margin-top: 25px; font-style: italic; color: #555;">
+    <p class="philosophy-en">
         <strong>Turning differences into strength through dialogue.</strong><br>
         Intercultural Labo fosters mutual understanding through dialogue and shared learning,<br>
         valuing individuals as human capital and supporting organizations<br>
         where diversity empowers people and drives growth.
     </p>
 </section>
-    </p>
-</section>
 
 <section id="事業紹介">
     <h2>事業紹介</h2>
@@ -410,7 +220,7 @@
     <p>実際の企業研修や参加者の声を今後掲載予定です。</p>
 </section>
 
-<section id="メンバー紹介" class="member-section">
+<section id="メンバー紹介">
     <h2>メンバー紹介</h2>
 
     <div class="member-profile">
@@ -420,34 +230,9 @@
             <h3 class="member-name">井上 礼子（INOUE, Reiko）</h3>
             <p class="member-title">異文化Labo 代表</p>
 
-            <h4>略歴</h4>
             <p>
-                航空会社で客室乗務員として30,000時間以上乗務し、チーフキャビンアテンダントとして
-                フライト現場で後進の指導・育成、安全教育に長く従事。<br>
-                国際線において、幅広い文化背景をもつ乗客・クルーと関わりながら多様性への理解を深め、
-                異文化理解と日本語教育の分野に強い関心を持つようになる。
-            </p>
-
-            <h4>専門分野</h4>
-            <ul>
-                <li>日本語教育（ビジネス日本語・職場コミュニケーション）</li>
-                <li>異文化理解研修</li>
-                <li>やさしい日本語指導（日本人社員向け）</li>
-                <li>安全教育・チームマネジメント</li>
-            </ul>
-
-            <h4>資格</h4>
-            <ul>
-                <li>キャリアコンサルタント</li>
-                <li>登録日本語教師</li>
-            </ul>
-
-            <h4>メッセージ</h4>
-            <p>
-                異文化Laboは、「違い」から学び、お互いを理解し合う多文化共生社会を目指しています。<br>
-                外国人社員への日本語・ビジネス習慣サポート、<br>
-                日本人社員への異文化理解教育を通して、<br>
-                共に働き、共に生きるための支援をしてまいります。
+                航空会社で客室乗務員として30,000時間以上乗務し、<br>
+                国際線の現場で後進育成・安全教育・チームマネジメントに長く従事。
             </p>
         </div>
     </div>
@@ -455,15 +240,9 @@
 
 <section id="contact">
     <h2>お問い合わせ</h2>
-    <p>以下のフォームよりお問い合わせをお送りください。</p>
 
     <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLScwVv2t27qibOEL_fFVXSTdFoVd_eV183Bp3mruyH2gMjcQaw/viewform?embedded=true"
-        width="100%" 
-        height="900" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
+        src="https://docs.google.com/forms/d/e/1FAIpQLScwVv2t27qibOEL_fFVXSTdFoVd_eV183Bp3mruyH2gMjcQaw/viewform?embedded=true">
         読み込んでいます…
     </iframe>
 </section>
@@ -474,118 +253,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </p>
-</section>
-    </p>
-</section>
-
-<section id="事業紹介">
-    <h2>事業紹介</h2>
-
-    <div class="service-box">
-        <h3>外国人社員向け</h3>
-        日本語教育、ビジネス日本語、異文化研修、職場でのコミュニケーション支援。
-    </div>
-
-    <div class="service-box">
-        <h3>日本人社員向け</h3>
-        異文化理解研修、外国人との協働ワークショップ、やさしい日本語導入サポート。
-    </div>
-</section>
-
-<section id="体験研修紹介">
-    <h2>体験・研修紹介</h2>
-    <p>実際の企業研修や参加者の声を今後掲載予定です。</p>
-</section>
-
-<section id="メンバー紹介" class="member-section">
-    <h2>メンバー紹介</h2>
-
-    <div class="member-profile">
-        <img src="LOGO.jpg" alt="プロフィール写真" class="member-photo">
-
-        <div class="member-text">
-            <h3 class="member-name">井上 礼子（INOUE, Reiko）</h3>
-            <p class="member-title">異文化Labo 代表</p>
-
-            <h4>略歴</h4>
-            <p>
-                航空会社で客室乗務員として30,000時間以上乗務し、チーフキャビンアテンダントとして
-                フライト現場で後進の指導・育成、安全教育に長く従事。<br>
-                国際線において、幅広い文化背景をもつ乗客・クルーと関わりながら多様性への理解を深め、
-                異文化理解と日本語教育の分野に強い関心を持つようになる。
-            </p>
-
-            <h4>専門分野</h4>
-            <ul>
-                <li>日本語教育（ビジネス日本語・職場コミュニケーション）</li>
-                <li>異文化理解研修</li>
-                <li>やさしい日本語指導（日本人社員向け）</li>
-                <li>安全教育・チームマネジメント</li>
-            </ul>
-
-            <h4>資格</h4>
-            <ul>
-                <li>キャリアコンサルタント</li>
-                <li>登録日本語教師</li>
-            </ul>
-
-            <h4>メッセージ</h4>
-            <p>
-                異文化Laboは、「違い」から学び、お互いを理解し合う多文化共生社会を目指しています。<br>
-                外国人社員への日本語・ビジネス習慣サポート、<br>
-                日本人社員への異文化理解教育を通して、<br>
-                共に働き、共に生きるための支援をしてまいります。
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>お問い合わせ</h2>
-    <p>以下のフォームよりお問い合わせをお送りください。</p>
-
-    <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLScwVv2t27qibOEL_fFVXSTdFoVd_eV183Bp3mruyH2gMjcQaw/viewform?embedded=true"
-        width="100%" 
-        height="900" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
-        読み込んでいます…
-    </iframe>
-</section>
-
-<footer>
-    © 2025 異文化Labo
-</footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
