@@ -17,7 +17,6 @@
             color: #333;
         }
 
-        /* ヘッダー */
         header {
             background: #0b4d91;
             color: #fff;
@@ -30,15 +29,15 @@
         }
         header p {
             font-size: 18px;
-            margin: 0 0 10px;
+            margin: 5px 0;
         }
 
-        /* ナビゲーション */
         nav {
             display: flex;
             justify-content: center;
             gap: 25px;
             flex-wrap: wrap;
+            margin-top: 15px;
         }
         nav a {
             color: #fff;
@@ -65,7 +64,6 @@
             padding-left: 12px;
         }
 
-        /* ===== 理念 ===== */
         .philosophy-section {
             background: #f4f8fb;
             padding: 40px 20px;
@@ -89,7 +87,6 @@
             color: #555;
         }
 
-        /* ===== 事業紹介 ===== */
         .service-box {
             background: #f4f8fb;
             padding: 25px 20px;
@@ -97,7 +94,6 @@
             border-radius: 10px;
         }
 
-        /* ===== メンバー ===== */
         .member-profile {
             display: flex;
             flex-wrap: wrap;
@@ -117,7 +113,6 @@
             margin-bottom: 5px;
         }
 
-        /* ===== 実績 ===== */
         .achievement-item {
             background: #f4f8fb;
             padding: 20px;
@@ -130,7 +125,6 @@
             font-size: 18px;
         }
 
-        /* ===== お問い合わせ前メッセージ ===== */
         .contact-message {
             text-align: center;
             padding: 30px 20px;
@@ -151,7 +145,6 @@
             margin-top: 50px;
         }
 
-        /* スマホ対応 */
         @media (max-width: 600px) {
             .philosophy-en {
                 display: none;
@@ -170,107 +163,14 @@
     <p>〜Japanese class for work〜</p>
     <p>しごと の にほんご</p>
 
+    <!-- ★ 追加：一瞬で伝わる説明 -->
+    <p style="font-size:16px; margin-top:15px;">
+        外国人社員・学習者と現場をつなぐ<br>
+        就労日本語 × 異文化コミュニケーション支援
+    </p>
+
     <nav>
         <a href="#理念">理念</a>
         <a href="#事業紹介">事業紹介</a>
         <a href="#メンバー紹介">メンバー紹介</a>
-        <a href="#実績">実績</a>
-        <a href="#contact">お問い合わせ</a>
-    </nav>
-</header>
-
-<section id="理念" class="philosophy-section">
-    <h2>理念</h2>
-
-    <p class="philosophy-catch">
-        違いをこえて　つながる　心豊かな世界へ
-    </p>
-
-    <p class="philosophy-jp">
-        異文化Laboは、文化や言語、価値観が異なる人々が対話を通して学びあい、<br>
-        相互理解を深め、リスペクトしあえる環境の実現を目指します。<br>
-        また、一人ひとりを貴重な「人財」ととらえ、<br>
-        外国にルーツがある人々が、多様性を活かし、活き活きと活躍できる多文化共生社会を目指します。
-    </p>
-
-    <p class="philosophy-en">
-        <strong>Turning differences into strength through dialogue.</strong><br>
-        Intercultural Labo fosters mutual understanding and growth through diversity.
-    </p>
-</section>
-
-<section id="事業紹介">
-    <h2>事業紹介</h2>
-
-    <div class="service-box">
-        <h3>外国人社員向け</h3>
-        初歩の就労日本語教育、実践ビジネス日本語研修、異文化理解および職場コミュニケーション支援
-    </div>
-
-    <div class="service-box">
-        <h3>日本人社員向け</h3>
-        異文化理解研修、外国人社員との協働ワークショップ、やさしい日本語導入支援
-    </div>
-</section>
-
-<section id="メンバー紹介">
-    <h2>メンバー紹介</h2>
-
-    <div class="member-profile">
-        <img src="LOGO.jpg" alt="プロフィール写真" class="member-photo">
-        <div>
-            <h3 class="member-name">井上 礼子（INOUE, Reiko）</h3>
-            <p>異文化Labo 代表</p>
-            <p>
-                登録日本語教師。<br>
-                キャリアコンサルタント。<br>
-                異文化環境の航空業界で、30,000時間以上の国際線客室乗務員経験を持つ。<br>
-                多文化環境での人財育成・安全教育・チームマネジメントのエキスパート。
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="実績">
-    <h2>実績</h2>
-
-    <div class="achievement-item">
-        <h3>HESED外国語学校 世田谷校</h3>
-        <p>
-            外国人学習者への日本語教育。<br>
-            留学・就労・生活場面を意識したコミュニケーション指導。
-        </p>
-    </div>
-
-    <div class="achievement-item">
-        <h3>JCA玉川　八幡クラス</h3>
-        <p>
-            地域日本語クラスにおける学習支援。<br>
-            成長が実感できる、学習者の背景・要望を尊重した対話型マンツーマン支援。
-        </p>
-    </div>
-</section>
-
-<section class="contact-message">
-    <p>
-        どうぞお気軽にご相談ください。<br>
-        ご状況やお悩みに合わせて、最適な形をご提案いたします。
-    </p>
-</section>
-
-<section id="contact">
-    <h2>お問い合わせ</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwVv2t27qibOEL_fFVXSTdFoVd_eV183Bp3mruyH2gMjcQaw/viewform?embedded=true"></iframe>
-</section>
-
-<footer>
-    © 2025 異文化Labo
-</footer>
-
-</body>
-</html>
-
-
-
-
-
+        <a href="#実績">実績
