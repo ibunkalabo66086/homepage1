@@ -24,6 +24,7 @@ header p{font-size:18px;margin:5px 0;}
 nav{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:15px;}
 nav a{color:#fff;text-decoration:none;font-weight:700;padding:8px 12px;border-radius:5px;}
 nav a:hover{background:#fff;color:#0b4d91;}
+
 section{padding:50px 20px;max-width:900px;margin:auto;}
 h2{color:#0b4d91;font-size:26px;border-left:5px solid #0b4d91;padding-left:12px;}
 
@@ -32,7 +33,7 @@ h2{color:#0b4d91;font-size:26px;border-left:5px solid #0b4d91;padding-left:12px;
 .philosophy-jp{text-align:center;}
 .philosophy-en{text-align:center;margin-top:25px;font-size:14px;font-style:italic;color:#555;}
 
-.service-box,.achievement-item{
+.service-box,.achievement-item,.faq-box{
 background:#f4f8fb;
 padding:25px 20px;
 margin-top:20px;
@@ -43,11 +44,13 @@ border-radius:10px;
 .member-photo{width:220px;height:220px;object-fit:cover;border-radius:8px;border:1px solid #ccc;}
 .member-name{font-size:28px;color:#0b4d91;margin-bottom:5px;}
 
-.contact-message{text-align:center;padding:30px 20px;font-size:16px;color:#0b4d91;}
+.contact-message{text-align:center;padding:35px 20px;font-size:18px;color:#0b4d91;font-weight:700;}
 
 iframe{width:100%;min-height:900px;border:none;}
 
 footer{background:#eee;text-align:center;padding:25px 20px;margin-top:50px;}
+
+ul{padding-left:20px;}
 
 @media(max-width:600px){
 .philosophy-en{display:none;}
@@ -63,15 +66,14 @@ header h1{font-size:28px;}
 <h1>異文化Labo</h1>
 <p>〜Japanese class for work〜</p>
 <p>しごと の にほんご</p>
-<p style="font-size:16px;margin-top:15px;">
-多様性が活きる職場づくりをサポートします
-</p>
+<p style="font-size:16px;margin-top:15px;">多様性が活きる職場づくりをサポートします</p>
 
 <nav>
 <a href="#理念">理念</a>
 <a href="#事業紹介">事業紹介</a>
 <a href="#メンバー紹介">メンバー紹介</a>
 <a href="#実績">実績</a>
+<a href="#faq">Q&A</a>
 <a href="#contact">お問い合わせ</a>
 </nav>
 </header>
@@ -80,48 +82,35 @@ header h1{font-size:28px;}
 <h2>理念</h2>
 <p class="philosophy-catch">就労日本語 × 異文化コミュニケーションで共に成長する現場へ</p>
 <p class="philosophy-jp">
-異文化Laboは、<br>
-「違い」を壁ではなく力に変える職場づくりを支援します。<br>
-
-外国人と日本人が共に働く現場では、<br>
-言葉だけでなく価値観・習慣・コミュニケーションの違いが課題となります。<br>
-
-私たちは、就労日本語教育と異文化理解研修を通して、<br>
-現場で本当に役立つ「伝わる力」「理解し合う力」を育て、<br>
-働く人と組織の成長をサポートします。
-
+異文化Laboは「違い」を壁ではなく力に変える職場づくりを支援します。<br>
+就労日本語教育と異文化理解を通して、現場で本当に役立つ「伝わる力」「理解し合う力」を育てます。
 </p>
-<p class="philosophy-en">
-Turning differences into strength through dialogue.
-</p>
+<p class="philosophy-en">Turning differences into strength through dialogue.</p>
 </section>
 
 <section id="事業紹介">
 <h2>事業紹介</h2>
+
 <div class="service-box">
-<h3>外国人社員・学習者向け</h3>
-<p>現場で実際に使われる日本語を中心に、
-「わかる」から「使える」日本語へを目指した指導を行います。</p>
-
-・報告・連絡・相談</p>
-・職場マナーと表現</p>
-・トラブル対応表現</p>
-・安全・業務指示理解</p>
-
-実務に直結する内容を、レベル別に提供します。</p>
+<h3>外国人社員・学習者向け日本語研修</h3>
+<ul>
+<li>報告・連絡・相談</li>
+<li>職場マナーと表現</li>
+<li>トラブル対応表現</li>
+<li>安全・業務指示理解</li>
+</ul>
+<p>実務に直結する内容をレベル別に提供します。</p>
 </div>
+
 <div class="service-box">
-<h3>日本人社員・受け入れ側向け異文化コミュニケーション研修</h3>
-
-文化の違いから生まれる誤解やストレスを減らし、チームとして機能する職場づくりを目指します。</p>
-
-・価値観の違いの理解</p>
-・伝え方・受け取り方の工夫(やさしいにほんご)</p>
-・多国籍チームのマネジメント基礎</p>
-・トラブル事例から学ぶ実践対応</p>
-
-企業・教育機関向けにカスタマイズ可能です。</p>
-
+<h3>異文化コミュニケーション研修</h3>
+<ul>
+<li>価値観の違いの理解</li>
+<li>やさしい日本語の活用</li>
+<li>多国籍チームのマネジメント</li>
+<li>トラブル事例対応</li>
+</ul>
+<p>企業・教育機関向けにカスタマイズ可能です。</p>
 </div>
 </section>
 
@@ -130,15 +119,9 @@ Turning differences into strength through dialogue.
 <div class="member-profile">
 <img src="LOGO.jpg" class="member-photo">
 <div>
-<h3 class="member-name">異文化Labo代表   井上 礼子</h3>
+<h3 class="member-name">井上 礼子</h3>
 <p>登録日本語教師／キャリアコンサルタント</p>
-<p>航空業界にて国際線・国内線の客室責任者として長年勤務。
-多国籍クルーの指導・育成、安全管理、サービス統括を担当。</p>
-異文化環境の最前線で培った実践経験をもとに、
-現在は日本語教育と異文化コミュニケーション支援を専門に活動。</p>
-「現場で本当に役立つ支援」をモットーに、
-学ぶ側・受け入れる側双方に寄り添ったサポートを行っている。
-</p>
+<p>航空業界で長年、多国籍クルーの指導・安全管理を担当。現場経験を活かした実践支援を行っています。</p>
 </div>
 </div>
 </section>
@@ -148,6 +131,30 @@ Turning differences into strength through dialogue.
 <div class="achievement-item">HESED外国語学校 世田谷校</div>
 <div class="achievement-item">JCA玉川 八幡クラス</div>
 <div class="achievement-item">株式会社インプレシオン</div>
+</section>
+
+<section id="faq">
+<h2>よくあるご質問</h2>
+
+<div class="faq-box">
+<strong>Q. 初級レベルでも受講できますか？</strong>
+<p>A. はい。レベルに合わせて現場で必要な表現から指導します。</p>
+</div>
+
+<div class="faq-box">
+<strong>Q. 内容はカスタマイズできますか？</strong>
+<p>A. 業種・職種・課題に合わせて設計いたします。</p>
+</div>
+
+<div class="faq-box">
+<strong>Q. オンライン対応は可能ですか？</strong>
+<p>A. 対面・オンラインどちらも対応しています。</p>
+</div>
+
+<div class="faq-box">
+<strong>Q. 研修期間は？</strong>
+<p>A. 単発から継続支援まで柔軟に対応可能です。</p>
+</div>
 </section>
 
 <section class="contact-message">
@@ -165,17 +172,3 @@ Turning differences into strength through dialogue.
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
