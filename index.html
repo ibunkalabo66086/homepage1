@@ -300,9 +300,29 @@ header h1{font-size:28px;}
 <footer>
 © 2025 異文化Labo
 </footer>
+<script>
+document.querySelectorAll('.accordion-title').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+
+        document.querySelectorAll('.accordion-content').forEach(item => {
+            if(item !== content){
+                item.style.display = 'none';
+            }
+        });
+
+        content.style.display =
+            content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
 
 </body>
 </html>
+    
+</body>
+</html>
+
 
 
 
